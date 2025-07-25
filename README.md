@@ -29,16 +29,19 @@ Inheritance design pattern
 ตอนนี้ให้สร้างคลาสของสัตว์แต่ละชนิดโดยเลือก extends และ implements ให้เหมาะสมLion:
 - extends Mammal
 - Override makeSound() ให้คืนค่า "Roar!"
+
 Eagle:
 - extends Bird
 - implements Flyable
 - Override makeSound() ให้คืนค่า "Screech!"
 - Implement fly() ให้คืนค่า "The eagle soars through the sky."
+
 Penguin:
 - extends Bird
 - implements Swimmable
 - Override makeSound() ให้คืนค่า "Squawk!"
 - Implement swim() ให้คืนค่า "The penguin dives gracefully in the water."
+
 Dolphin:
 - extends Mammal
 - implements Swimmable
@@ -52,6 +55,7 @@ Dolphin:
 - วนลูปในลิสต์ Animal ของคุณ
 - ในแต่ละรอบ ให้พิมพ์ชื่อและเสียงร้องของสัตว์ (animal.getName() และ animal.makeSound())
 - สังเกตว่า Polymorphism ทำให้เมธอด makeSound() ของคลาสที่ถูกต้องถูกเรียกใช้โดยอัตโนมัติ
+
 ทดสอบความสามารถพิเศษ (จาก Interface):
 - วนลูปในลิสต์ Animal อีกครั้ง
 - ในแต่ละรอบ ให้ใช้ instanceof เพื่อตรวจสอบว่าสัตว์ตัวนั้นมีความสามารถพิเศษหรือไม่ และสั่งให้มันแสดงความสามารถนั้น แต่ถ้าไม่มีความสามารถใดๆ ให้เขียนว่ากำลังเดินเล่นในสวนสัตว์
